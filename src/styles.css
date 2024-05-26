@@ -61,3 +61,24 @@
   .card img {
     width: 100%;
   }
+  .skeleton {
+    background-color: #e2e5e7
+        linear-gradient(
+          90deg, 
+          rgba(#fff, 0), 
+          rgba(#fff, 0.5),
+          rgba(#fff, 0)
+        );
+    background-size: 40px 100%; 
+    background-repeat: no-repeat; 
+    background-position: left -40px top 0;
+    animation: shine 1s ease infinite; 
+    width: 300px;
+    height: 300px;
+  }
+  
+  @keyframes shine {
+    to {
+      background-position: right -40px top 0;
+    }
+  }
